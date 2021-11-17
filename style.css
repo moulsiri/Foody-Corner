@@ -1,0 +1,357 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing:border-box;
+    font-family: 'gilroy';
+    color:#3f4143;
+}
+html,body{
+    min-height:100vh;
+    width:100%;
+}
+:root{
+    --bg:#ff8c4e;
+}
+
+#bg{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+}
+#left{
+    min-height:inherit;
+    width:45%;
+    background-color:var(--bg);
+    position:relative;
+}
+/* middle image  */
+#left img{
+    position:absolute;
+    height:65%;
+    right:-270px;
+    top:35%;
+    z-index: 9;
+
+}
+/* logo  */
+#lnav h4{
+    color: #48494b;
+    font-family: "Voyage";
+    /* padding: 2em 3em; */
+    font-weight: 900;
+    letter-spacing: .3em;
+    font-size: 1em;
+
+}
+#lnav{
+    height: 10vh;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+#lnavi {
+    display: none;
+}
+#ltxt{
+    width: 70%;
+    height: 60vh;
+    display: flex;
+    /* background-color: #3f41433b; */
+    margin-left: 4em;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 12px;
+}
+#ltxt h1{
+    /* position: absolute;
+    left:8%;
+    top:30%; */
+    font-family: 'ogg';
+    font-size: 5em;
+    color:#fff;
+
+}
+#ltxt p{
+    /* position: absolute;
+    left:8%;
+    top:47%; */
+    width: 80%;
+    font-size: 15px;
+    color:#fff;
+    font-size:1em;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    
+
+}
+#ltxt h6{
+    /* position: absolute;
+    left:8%;
+    top:20%; */
+    letter-spacing: 3px;
+    font-size: 1em;
+    color:#fff;
+    font-weight: 300;
+
+}
+#ltxt button{
+    /* position: absolute;
+    left:8%;
+    top:77%; */
+    background-color: #3f4143ea;
+    color: var(--bg);
+    border: none;
+    width: 6em;
+    height: 3em;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 2em;
+    letter-spacing: .1em;
+
+
+}
+#ltxt #icons{
+    /* top:90%;
+    position: absolute;
+    left: 8%;
+    */
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+#left #icons i{
+    font-size: 1.3em;
+    color:#fff;
+}
+
+#right{
+    min-height:inherit;
+    width:55%;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+/* curve design  */
+#curve1{
+    height:900px;
+    width:800px;
+    background-color:var(--bg);
+    position:absolute;
+    border-top-right-radius:100%;
+    bottom:-140%;
+    right:-60%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    
+}
+#curve2{
+    height:900px;
+    width:900px;
+    background-color:#fff;
+    position:absolute;
+    border-top-right-radius:70%;
+    bottom:-170%;
+    right:-50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    
+}
+
+/* navbar */
+#nav{
+    display:flex;
+    justify-content: space-between;
+    padding-top:30px;
+}
+#links a{
+    padding-left:30px;
+    color: #3f4143;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 15px;
+
+}
+#navIcon i{
+    color:#3f4143;
+}
+#navIcon i:nth-child(2){
+    padding-right:50px;
+}
+/* #navIcon i:nth-child(2) span{
+    width: 10px;
+    height: 10px;
+
+    color:white;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    padding: 2px;
+    margin:0px;
+    font-size: 10px;
+
+   
+} */
+
+
+/* Small stuffs  */
+
+#text{
+    position: absolute;
+    top:20%;
+    left:40%;
+    display: flex;
+    flex-direction: column;
+  
+
+    
+
+}
+#hmicon{
+    display: flex;
+    align-items: center;
+    
+}
+
+#text h5{
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight:500 ;
+    
+
+}
+#text h5 i{
+    color:#3f4143;
+}
+#text i{
+    
+    color:rgb(233, 198, 3);
+}
+#hmicon i{
+    margin-left: 2em;
+    color:#3f4143;
+
+}
+#text h5 i{
+    color:#3f4143;
+}
+#text h6{
+    
+    letter-spacing: 4px;
+    color: var(--bg);
+}
+
+
+#recipe{
+    width: 60%;
+    height: 48%;
+    display: flex;
+    position:absolute;
+    justify-content: flex-end;
+    top:33%;
+    right: 0;
+    border-left: 2px dashed #595c5fb6;
+    /* background-color: #ff8c4e; */
+}
+#recipe #circ{
+    width: 8em;
+    height: 8em;
+    background-color: var(--bg);
+    border-radius: 50%;
+    position: absolute;
+    left:10%;
+    bottom:15%;
+    box-shadow: 0px 1px 25px -8px;
+}
+.c{
+    width:40%;
+    height: 40%;
+    background-color: #fff;
+    border-radius: 50%;
+    position:absolute;
+    border:1px solid #75797c;
+
+}
+.c i{
+    color:var(--bg);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.c p{
+    font-size: 8px;
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    
+}
+.c:nth-child(1){
+    right: 10%;
+    top:10%;
+    
+
+}
+.c:nth-child(2){
+    left:30%;
+    bottom:5%;
+    
+}
+.c:nth-child(3){
+    top:20%;
+    left:5%;
+    
+}
+#btn{
+    position: absolute;
+    bottom:10%;
+    right: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+#btn button{
+    background-color: #3f4143;
+    border:none;
+    color:var(--bg);
+    
+    border-radius: 2em;
+    text-align: center;
+    padding: 1em;
+    font-size: .8em;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    
+    letter-spacing: 3px;
+
+}
+#btn button i{
+    color:var(--bg);
+   
+
+    font-weight: 300;
+    font-size: 1em;
+
+}
+#btn button:nth-child(2){
+    border:2px solid #3f4143;
+    background-color: transparent;
+    color:#3f4143;
+    /* width: 150px; */
+    
+}
+#btn button:nth-child(2) i{
+    color:#3f4143;
+    
+}
+
+#line{
+    width: 20em;
+    height: .1em;
+    background-color: #3f4143;
+    position: absolute;
+    right: 0%;
+    top:21.5%;
+}
