@@ -22,37 +22,57 @@ tl
 },"-=.5")
 .from("#lnav",{
     ease:Bounce.easeInOut,
-    y:-100,
-    duration:2
-
-},"-=3")
-.from("#nav a,#nav i",{
-    stagger:.3,
-    y:-100,
+    y:-5,
     opacity:0,
-    duration:2
-},"-=2")
-.from("#text,#line",{
-    ease:Elastic.easeInOut,
-    x:700,
-    duration:1,
-    width:0
-},"-=3")
+    duration:1.5
+
+},"-=1")
 .from("#ltxt",{
-    x:-500,
+    x:50,
+    opacity:0,
     duration:2,
-    ease:Elastic.easeInOut
-},"-=4")
+    ease:Expo.easeInOut
+},"-=1.9")
+.from("#text",{
+    ease:Expo.easeInOut,
+    opacity:0,
+    x:-70,
+    duration:1,
+
+},"-=1")
 .from("#recipe",{
-    stagger:1,
+    opacity:0,
+    x:-50,
     duration:2,
-    x:500,
     ease:Elastic.easeOut
 
-},"-=3")
+},"-=.2")
+.from("#line",{
+    width:0,
+    duration:1,
+    ease:Expo.easeInOut
+
+},"-=1")
+.from("#links a",{
+    stagger:.3,
+    ease:Expo.easeInOut,
+    // y:-5,
+    opacity:0,
+    duration:1.5
+},"-=2")
+.from("#navIcon i",{
+    stagger:.3,
+    ease:Bounce.easeInOut,
+    opacity:0,
+    x:5,
+    duration:1
+    
+},"-=.5")
 .from("#btn",{
     stagger:.3,
     ease:Bounce.easeInOut,
-    y:200
-},"-=3")
+    y:10,
+    duration:1,
+    opacity:0
+},"-=1.5")
 

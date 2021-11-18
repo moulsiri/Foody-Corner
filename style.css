@@ -161,7 +161,12 @@ html,body{
 #nav{
     display:flex;
     justify-content: space-between;
-    padding-top:30px;
+    /* padding-top:30px; */
+    height: 10vh;
+    align-items: center;
+}
+#links{
+    width:50%;
 }
 #links a{
     padding-left:30px;
